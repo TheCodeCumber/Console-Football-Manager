@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/ferdinand/CPP/FootballManager/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/FootballManager.dir/main.cpp.o -c /home/ferdinand/CPP/FootballManager/main.cpp",
-  "file": "/home/ferdinand/CPP/FootballManager/main.cpp"
-}
-]
