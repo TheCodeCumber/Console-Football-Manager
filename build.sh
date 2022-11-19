@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SHORT=t:b:
-LONG=target-dir:build-type:
+SHORT=j:t:b:
+LONG=just-build:target-dir:build-type:
 
 OPTS=$(getopt --options $SHORT --long $LONG --name "$0" -- "$@")
 
@@ -11,6 +11,7 @@ eval set -- "$OPTS"
 
 buildType=Debug
 targDir="../FM-Build"
+justBuild=false
 
 while true ; do
   case "$1" in
@@ -22,6 +23,10 @@ while true ; do
     -b | --build-type )
       buildType="$2"
       shift
+      shift
+      ;;
+    -j | --just-build )
+      justBuild=true
       shift
       ;;
     -- )
@@ -38,10 +43,20 @@ done
 printf "\nSelected Target Directory: ${targDir}\n"
 printf "Selected Build Type: ${buildType}\n"
 
-printf "\n####\n\n"
+printf "\n####-BUILD-####\n\n"
 
 #build process
 
 cmake -S . -B ${targDir} -DCMAKE_BUILD_TYPE=${buildType}
 
-printf "\n####\n\n"
+#run
+
+if [justBuild]; then
+  printf "\n####\n\n"
+else
+  printf "\n####-RUN-####\n\n"
+  cd ${targDir}
+  make
+  printf "\n####\n\n"
+fi
+
