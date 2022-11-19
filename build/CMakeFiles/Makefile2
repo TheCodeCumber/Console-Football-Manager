@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/ferdinand/CPP/FootballManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferdinand/CPP/FootballManager
+CMAKE_BINARY_DIR = /home/ferdinand/CPP/FootballManager/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/FootballManager.dir/clean
 CMakeFiles/FootballManager.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FootballManager.dir/build.make CMakeFiles/FootballManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FootballManager.dir/build.make CMakeFiles/FootballManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferdinand/CPP/FootballManager/CMakeFiles --progress-num=1,2 "Built target FootballManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferdinand/CPP/FootballManager/build/CMakeFiles --progress-num=1,2 "Built target FootballManager"
 .PHONY : CMakeFiles/FootballManager.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FootballManager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdinand/CPP/FootballManager/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdinand/CPP/FootballManager/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FootballManager.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdinand/CPP/FootballManager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdinand/CPP/FootballManager/build/CMakeFiles 0
 .PHONY : CMakeFiles/FootballManager.dir/rule
 
 # Convenience name for target.

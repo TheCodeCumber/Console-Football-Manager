@@ -1,3 +1,0 @@
-/home/ferdinand/CPP/FootballManager/CMakeFiles/FootballManager.dir
-/home/ferdinand/CPP/FootballManager/CMakeFiles/edit_cache.dir
-/home/ferdinand/CPP/FootballManager/CMakeFiles/rebuild_cache.dir
