@@ -1,2 +1,3 @@
 <h1>Console Football Manager</h1>
- <button type="button">Click Me!</button> 
+<hr>
+<span>A console application to simulate football matches!</span>
