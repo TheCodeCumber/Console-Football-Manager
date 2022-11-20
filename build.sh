@@ -43,7 +43,7 @@ done
 printf "\nSelected Target Directory: ${targDir}\n"
 printf "Selected Build Type: ${buildType}\n"
 
-printf "\n####-BUILD-####\n\n"
+printf "\n####-CMAKE-####\n\n"
 
 #build process
 
@@ -54,7 +54,7 @@ cmake -S . -B ${targDir} -DCMAKE_BUILD_TYPE=${buildType}
 if [justBuild]; then
   printf "\n####\n\n"
 else
-  printf "\n####-RUN-####\n\n"
+  printf "\n####-MAKE-####\n\n"
   cd ${targDir}
   make
   printf "\n####\n\n"
