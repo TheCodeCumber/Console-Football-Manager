@@ -40,23 +40,23 @@ while true ; do
 
 done
 
-printf "\nSelected Target Directory: ${targDir}\n"
-printf "Selected Build Type: ${buildType}\n"
+printf "\nSelected Target Directory: ${targDir}\n" ;
+printf "Selected Build Type: ${buildType}\n" ;
 
-printf "\n####-CMAKE-####\n\n"
+printf "\n####-CMAKE-####\n\n" ;
 
 #build process
 
-cmake -S . -B ${targDir} -DCMAKE_BUILD_TYPE=${buildType}
+cmake -S . -B ${targDir} -DCMAKE_BUILD_TYPE=${buildType} ;
 
 #run
 
-if [justBuild]; then
-  printf "\n####\n\n"
+if [ "$justBuild" = true ]; then
+  printf "\n####\n\n" ;
 else
-  printf "\n####-MAKE-####\n\n"
-  cd ${targDir}
-  make
-  printf "\n####\n\n"
+  printf "\n####-MAKE-####\n\n" ;
+  cd ${targDir} ;
+  make ;
+  printf "\n####\n\n" ;
 fi
 
