@@ -1,13 +1,9 @@
 
-#include "Callable.h"
+
 #include "Object.h"
 
-    Object::Object(const char* id) : id(id){}
+    Object::Object(){}
 
-    Callable* Object::getObject() {
+    Object* Object::getObject() {
         return this;
-    }
-
-    const char* Object::getId() const {
-        return id;
     }

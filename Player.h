@@ -9,7 +9,7 @@ class Player : public Object{
     int age;
 
   public:
-    Player(const char* id, const char* name, int age);
+    Player(const char* name, int age);
     char print(){return 's';}
 };
 #endif

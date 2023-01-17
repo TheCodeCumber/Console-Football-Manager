@@ -58,5 +58,6 @@ else
   cd ${targDir} ;
   make ;
   printf "\n####\n\n" ;
+  ./FootballManager ;
 fi
 
