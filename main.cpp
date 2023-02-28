@@ -14,5 +14,3 @@ int main(int argc, char* argv[]) {
 
 }
 
-//to do: cmake config; create renderer module; create match module
-
